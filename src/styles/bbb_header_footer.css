@@ -1,0 +1,242 @@
+.navbar_bbb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 2px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo-container_bbb {
+  margin-bottom: 10px;
+}
+
+.logo_bbb {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo_bbb:hover {
+  transform: scale(1.2);
+}
+
+.nav-links_bbb {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding-right: 20px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.nav-links_bbb {
+    margin-left: auto;
+}
+
+
+
+.nav-links_bbb li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 450;
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.nav-links_bbb li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links_bbb li a:hover {
+  font-weight: 600;
+  transform: scale(1.2);
+}
+
+.nav-links_bbb li a:hover::after {
+  width: 100%;
+}
+
+.nav-links_bbb li a.active1,
+.nav-links_bbb li a.active1:hover {
+  font-weight: 600;
+  transform: scale(1.2);
+}
+
+.nav-links_bbb li a.active1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.logo-link_bbb {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.name-image {
+        width: 270px;
+        height: 90px;
+      
+}
+
+.site-name_bbb {
+  color: white;
+  font-size: 0.1rem;
+  font-weight: bold;
+  margin-left: 30px;
+  transition: transform 0.3s ease;
+}
+
+.site-name_bbb:hover {
+  transform: scale(1.2);
+}
+
+.name_site {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .name_site:hover {
+    transform: scale(1.1);
+  }
+
+/* ==================================================
+                      Footer 
+  =====================================================*/
+
+.footer_bbb {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 20px;
+  margin-top: -78px;
+  width: auto;
+}
+
+.footer-content_bbb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content_bbb p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-links_bbb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links_bbb li a {
+  color: #aaa;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.footer-links_bbb li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .navbar_bbb {
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: -1px;
+  }
+
+  .logo-container_bbb {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+  }
+
+  .name-image {
+    width: 180px;
+    height: 60px;
+  }
+
+  .nav-links_bbb {
+    position: static !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 0;
+    gap: 5px;
+    /* margin-top: 1px; */
+    margin-bottom: 4px;
+    margin-right: -140px;
+  }
+
+  .nav-links_bbb li a {
+    font-size: 14px;
+  }
+
+  .site-name_bbb {
+    font-size: 0.1rem; /* keep as is or hide if using logo image */
+    margin-left: 0;
+  }
+
+  /* Search adjustments */
+  .search-container {
+    width: 50%;
+    display: block;
+    justify-content: right;
+    margin-bottom: -144px;
+    
+  }
+
+  .search-container input {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  
+
+  input[type="text"] {
+    position: static !important;
+    width: 90%;
+    margin-top: -1px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .fa-search {
+    position: static !important;
+    margin-top: 10px;
+    margin-right: 6px;
+    color: white;
+  }
+}

@@ -1,0 +1,121 @@
+.octa-button-1 {
+  position: absolute;
+  top: 225px;
+  left: 505px;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  border: none;
+  padding: 0;
+  opacity: 0;
+  
+}
+
+/* .math-back-button {
+  position: absolute;
+  top: 7rem;
+  left: 20rem;
+  padding: 8px 16px;
+  background-color: #cec1c1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgb(0, 26, 255);
+  transition: background-color 0.3s ease;
+
+} */
+
+.bos-math-image {
+  position: "absolute";
+  top: "0";
+  left: 0;
+  width: "100%";
+  height: "100%";
+}
+
+/* Algebra Logo  */
+.math-alge-a {
+  position: absolute;
+  top: 50vh;
+  left: 12vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+}
+
+.math-alge-logo {
+  width: 6vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.math-alge-logo:hover {
+  transform: scale(1.13);
+}
+
+/* Geometry Logo  */
+.math-geo-a {
+  position: absolute;
+  top: 28vh;
+  left: 32.5vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+  object-fit: cover;
+}
+
+.math-geo-logo {
+  width: 6vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.math-geo-logo:hover {
+  transform: scale(1.15);
+}
+
+/* Trigonometry Logo  */
+.math-tri-a {
+  position: absolute;
+  top: 28vh;
+  right: 31.7vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+  object-fit: cover;
+}
+
+.math-tri-logo {
+  width: 7.5vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.math-tri-logo:hover {
+  transform: scale(1.12);
+}
+
+/* Calculus Logo  */
+.math-calc-a {
+  position: absolute;
+  top: 51.5vh;
+  right: 10.5vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+}
+
+.math-calc-logo {
+  width: 9vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.math-calc-logo:hover {
+  transform: scale(1.13);
+}

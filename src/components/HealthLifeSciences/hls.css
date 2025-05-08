@@ -1,0 +1,128 @@
+
+  /* AYU Logo  */
+  .hls-ayu-a {
+    position: absolute;
+    top: 54.8vh;
+    left: 7vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+  }
+  
+  .hls-ayu-logo {
+    width: 6.4vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .hls-ayu-logo:hover {
+    transform: scale(1.11);
+  }
+  
+  /* BOT Logo  */
+  .hls-bot-a {
+    position: absolute;
+    top: 39.6vh;
+    left: 21.1vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+    object-fit: cover;
+  }
+  
+  .hls-bot-logo {
+    width: 6.9vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .hls-bot-logo:hover {
+    transform: scale(1.12);
+  }
+  
+  /* HF Logo  */
+  .hls-hf-a {
+    position: absolute;
+    top: 29.4vh;
+    left: 38.2vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+    object-fit: cover;
+  }
+  
+  .hls-hf-logo {
+    width: 6.4vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .hls-hf-logo:hover {
+    transform: scale(1.11);
+  }
+  
+  /* VA Logo  */
+  .hls-va-a {
+    position: absolute;
+    top: 30vh;
+    right: 38.3vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+  }
+  
+  .hls-va-logo {
+    width: 5.5vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .hls-va-logo:hover {
+    transform: scale(1.11);
+  }
+
+    /* FS Logo  */
+    .hls-fs-a {
+        position: absolute;
+        top: 40vh;
+        right: 21.6vw;
+        cursor: pointer;
+        z-index: 10;
+        background: transparent;
+        opacity: 1;
+      }
+      
+      .hls-fs-logo {
+        width: 5.8vw;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
+      
+      .hls-fs-logo:hover {
+        transform: scale(1.11);
+      }
+
+        /* SOP Logo  */
+  .hls-sop-a {
+    position: absolute;
+    top: 57vh;
+    right: 6.4vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+  }
+  
+  .hls-sop-logo {
+    width: 7.9vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .hls-sop-logo:hover {
+    transform: scale(1.11);
+  }

@@ -1,0 +1,51 @@
+/* ==================================================
+                 Only For Introduction.js 
+=====================================================*/
+
+.article-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+  position: relative;
+}
+
+/* Middle column */
+.i-mid-section {
+  flex: 1;
+  padding: 10 10px;
+  text-align: justify;
+
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 56%;
+}
+
+.intro_enter_btn {  
+  height: 110px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.intro_enter_btn:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .article-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .i-mid-section {
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+
+  

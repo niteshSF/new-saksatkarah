@@ -1,0 +1,86 @@
+
+  /* ABJ Logo  */
+  .ss-abj-a {
+    position: absolute;
+    top: 45vh;
+    left: 14.5vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+  }
+  
+  .ss-abj-logo {
+    width: 7.5vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .ss-abj-logo:hover {
+    transform: scale(1.13);
+  }
+  
+  /* TC Logo  */
+  .ss-tc-a {
+    position: absolute;
+    top: 30.7vh;
+    left: 35.7vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+    object-fit: cover;
+  }
+  
+  .ss-tc-logo {
+    width: 6.3vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .ss-tc-logo:hover {
+    transform: scale(1.13);
+  }
+  
+  /* PS Logo  */
+  .ss-ps-a {
+    position: absolute;
+    top: 29.8vh;
+    right: 35.8vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+    object-fit: cover;
+  }
+  
+  .ss-ps-logo {
+    width: 6.2vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .ss-ps-logo:hover {
+    transform: scale(1.12);
+  }
+  
+  /* MS Logo  */
+  .ss-ms-a {
+    position: absolute;
+    top: 45.5vh;
+    right: 13.5vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+  }
+  
+  .ss-ms-logo {
+    width: 5.4vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .ss-ms-logo:hover {
+    transform: scale(1.11);
+  }

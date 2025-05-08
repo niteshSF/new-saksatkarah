@@ -1,0 +1,206 @@
+.bbb_component {
+  /* position: relative; */
+  display: inline-block;
+}
+
+/* Container for both images (main and cloud) */
+.bbb-image-container {
+  position: absolute;
+}
+
+/* circle button 1 style */
+.bbb-circle-button-1 {
+  position: absolute;
+  top: 22.2vh;
+  left: 45.8vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+  align-items: center;
+}
+
+/* circle image 1 style */
+.bbb-circle-image-1 {
+  width: 9vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* circle image 1 style */
+.bbb-circle-image-1:hover {
+  transform: scale(1.1);
+}
+
+/* circle button 2 style */
+.bbb-circle-button-2 {
+  position: absolute;
+  top: 34.2vh;
+  left: 59.2vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+  align-items: center;
+}
+
+/* circle image 2 style */
+.bbb-circle-image-2 {
+  width: 7.8vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* circle image 2 style */
+.bbb-circle-image-2:hover {
+  transform: scale(1.1);
+}
+
+/* circle button 3 style */
+.bbb-circle-button-3 {
+  position: absolute;
+  top: 50vh;
+  left: 70.5vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+  align-items: center;
+}
+
+/* circle image 3 style */
+.bbb-circle-image-3 {
+  width: 6vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* circle image 3 style */
+.bbb-circle-image-3:hover {
+  transform: scale(1.1);
+}
+
+/* circle button 4 style */
+.bbb-circle-button-4 {
+  position: absolute;
+  top: 67.4vh;
+  left: 59.5vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+  align-items: center;
+}
+
+/* circle image 4 style */
+.bbb-circle-image-4 {
+  width: 7.3vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* circle image 4 style */
+.bbb-circle-image-4:hover {
+  transform: scale(1.1);
+}
+
+/* circle button 5 style */
+.bbb-circle-button-5 {
+  position: absolute;
+  top: 78vh;
+  left: 47.6vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+  align-items: center;
+}
+
+/* circle image 5 style */
+.bbb-circle-image-5 {
+  width: 5.5vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* circle image 5 style */
+.bbb-circle-image-5:hover {
+  transform: scale(1.1);
+}
+
+/* circle button 6 style */
+.bbb-circle-button-6 {
+  position: absolute;
+  top: 68vh;
+  left: 33.6vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+  align-items: center;
+}
+
+/* circle image 6 style */
+.bbb-circle-image-6 {
+  width: 7.5vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* circle image 6 style */
+.bbb-circle-image-6:hover {
+  transform: scale(1.1);
+}
+
+/* circle button 7 style */
+.bbb-circle-button-7 {
+  position: absolute;
+  top: 49.6vh;
+  left: 23.5vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+  align-items: center;
+}
+
+/* circle image 7 style */
+.bbb-circle-image-7 {
+  width: 6vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* circle image 7 style */
+.bbb-circle-image-7:hover {
+  transform: scale(1.1);
+}
+
+/* circle button 8 style */
+.bbb-circle-button-8 {
+  position: absolute;
+  top: 35.9vh;
+  left: 33.9vw;
+  cursor: pointer;
+  z-index: 10;
+  background: transparent;
+  opacity: 1;
+  align-items: center;
+}
+
+/* circle image 8 style */
+.bbb-circle-image-8 {
+  width: 7.5vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* circle image 8 style */
+.bbb-circle-image-8:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+
+}
