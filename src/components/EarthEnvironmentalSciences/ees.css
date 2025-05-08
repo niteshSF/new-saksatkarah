@@ -1,0 +1,64 @@
+/* gg Logo  */
+.ees-gg-a {
+    position: absolute;
+    top: 41.6vh;
+    left: 16.3vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+  }
+  
+  .ees-gg-logo {
+    width: 8vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+    
+  .ees-gg-logo:hover {
+    transform: scale(1.13);
+  }
+  
+  /* ee Logo  */
+  .ees-ee-a {
+    position: absolute;
+    top: 29vh;
+    left: 45.2vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+    object-fit: cover;
+  }
+  
+  .ees-ee-logo {
+    width: 9.9vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .ees-ee-logo:hover {
+    transform: scale(1.13);
+  }
+  
+  /* forestry Logo  */
+  .ees-for-a {
+    position: absolute;
+    top: 41vh;
+    right: 17.8vw;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+    opacity: 1;
+    object-fit: cover;
+  }
+  
+  .ees-for-logo {
+    width: 5vw;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .ees-for-logo:hover {
+    transform: scale(1.13);
+  }

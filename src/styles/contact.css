@@ -1,0 +1,92 @@
+.row-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    padding: 50px;
+    flex-wrap: wrap; /* Responsive */
+  }
+  
+  .row-1 img {
+    width: 425px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease; /* Added border transition */
+    border: 2px solid rgba(87, 85, 85, 0.7); /* Semi-transparent border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.2); /* Light shadow for faded effect */
+  }
+  
+  .row-1 img:hover {
+    transform: scale(1.1);
+    border: 2px solid rgba(87, 85, 85, 1); /* Darker border on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .content-1 {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.6;
+    
+  }
+  
+  .row-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -90px;
+    margin-left: 40px;
+    gap: -13px;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .row-2 img {
+    width: 405px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease; /* Added border transition */
+    border: 2px solid rgba(87, 85, 85, 0.7); /* Semi-transparent border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.2); /* Light shadow for faded effect */
+  }
+  
+  .row-2 img:hover {
+    transform: scale(1.1);
+    border: 2px solid rgba(87, 85, 85, 1); /* Darker border on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .content-2 {
+    flex: 1;
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .tables-container {
+    display: flex;
+    gap: 0px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .info-table {
+    border-collapse: collapse;
+    width: 250px;
+  }
+  
+  .info-table th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .info-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 14px;
+  }
+  

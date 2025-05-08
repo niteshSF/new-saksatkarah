@@ -1,0 +1,528 @@
+.back-button {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  padding: 5.5px 8px;
+  background-color: hwb(66 57% 14%);
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgb(52, 53, 35);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e5e7eb;
+}
+
+.inside-alge-home-btn {
+  position: fixed;
+  top: 2rem;
+  right: 120px;
+  padding: 5.5px 8px;
+  background-color: #d4db92;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgb(52, 53, 35);
+  transition: background-color 0.3s ease;
+}
+
+.inside-alge-home-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  transition: width 0.3s ease;
+}
+
+.inside-alge-home-btn:hover {
+  font-weight: 600;
+  transform: scale(1.1);
+}
+
+.inside-alge-home-btn:hover::after {
+  width: 100%;
+}
+
+.next-button {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  padding: 5.5px 8px;
+  background-color: #d4db92;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgb(52, 53, 35);
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #e5e7eb; /* Tailwind gray-200 */
+}
+
+.main-content-full {
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  flex: 1;
+  padding-top: 20px;
+  text-align: left;
+  background: linear-gradient(#ffffff, #d6d6be);
+}
+
+/* Collapsed layout centers the mid-section */
+.main-content-full.collapsed {
+  justify-content: center;
+}
+
+.alge-left-section {
+  flex: 3;
+  min-width: 220px;
+  max-width: 270px;
+  position: fixed;
+  top: 120px;
+  left: -10px;
+  height: calc(100vh - 130px);
+  overflow-y: auto;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  text-align: left;
+  background-color: linear-gradient(#ace6d8, #e7e7da);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.85);
+  transition: all 0.3s ease;
+}
+
+.alge-left-section.adjusted-up {
+  top: 170px;
+  height: calc(100vh - 190px);
+  transform: translateY(-50px); /* Moves it up when footer appears */
+}
+
+.main-content-full.collapsed .alge-mid-section {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.alge-left-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.alge-left-section::-webkit-scrollbar-track {
+  background: lightgrey;
+}
+
+.alge-left-section::-webkit-scrollbar-thumb {
+  background-color: #8a8a8a;
+  border-radius: 3px;
+}
+
+.alge-left-section::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Left section links */
+.alge-left-section ul {
+  padding: 0;
+  margin-left: 3rem;
+}
+
+.alge-left-section li {
+  margin-bottom: 10px;
+  margin-left: 1rem;
+}
+
+.alge-left-section a {
+  text-decoration: none;
+  /* color: #333; */
+  transition: all 0.2s ease-in-out;
+}
+
+.alge-left-section a:hover {
+  text-decoration: underline;
+  color: #000dff;
+}
+
+/* Collapse the left section visually */
+.alge-left-section.collapsed {
+  width: 60px;
+  min-width: 80px;
+  max-width: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Keep the toggle button in view */
+.alge-left-section .toggle-button {
+  position: absolute;
+  top: -8px;
+  left: 30px;
+  right: 10px;
+  width: calc(23% - 20px);
+}
+
+.alge-mid-section {
+  flex: 3;
+  margin-left: 300px;
+  margin-right: 30px;
+  padding: 0 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.alge-mid-section p {
+  text-align: justify;
+  /* margin-top: 6rem; */
+}
+
+.main-content-full.collapsed .alge-mid-section {
+  margin: auto;
+  width: 92%;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  transition: all 0.3s ease;
+}
+
+.toggle-button {
+  background-color: #7f8081;
+  color: white;
+  padding: 8px 16px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.toggle-button:hover {
+  background-color: #59595a;
+}
+
+.head-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background-color: #e6e6c8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.head-section h1 {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.alge-mid-section h3 {
+  text-align: left;
+  scroll-margin-top: 150px;
+}
+
+.all_math_explore_btn {
+  height: 15vh;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.all_math_explore_btn:hover {
+  transform: scale(1.17);
+}
+
+.alge_home a {
+  color: white;
+  text-decoration: none;
+  font-weight: 450px;
+  /* background-color: #000000; */
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-block;
+  /* background: transparent; */
+}
+
+.alge_home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.alge_home:hover {
+  font-weight: 600;
+  transform: scale(1.2);
+}
+
+.alge_home:hover::after {
+  width: 100%;
+}
+
+.a-ref-image {
+  max-width: 70%;
+  height: auto;
+  border-radius: 18px;
+}
+
+.a-p-1-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.below-heading-image {
+  width: 10%;
+  position: fixed;
+  top: 50px;
+  margin-left: -10px;
+}
+
+/*alge further reading */
+
+.further-reading-btn {
+  position: fixed;
+  top: 2rem;
+  left: 8rem;
+  padding: 5.5px 8px;
+  background-color: #d4db92;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgb(52, 53, 35);
+  transition: background-color 0.3s ease;
+}
+
+.further-reading-btn:hover {
+  background-color: #e5e7eb; /* Tailwind gray-200 */
+}
+
+.dropdown-menu {
+  width: 18rem; /* w-72 */
+  background-color: rgb(156, 156, 156);
+  border: 1px solid #494949;
+  border-radius: 0.375rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 50;
+  position: fixed;
+  top: 3.7rem;
+  left: 12rem;
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0.5rem;
+  font-size: 0.875rem; /* text-sm */
+  color: #000000; /* gray-700 */
+}
+
+.dropdown-item {
+  position: relative;
+}
+
+.dropdown-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-button:hover {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 0.5rem;
+  width: 16rem;
+
+  max-height: 500px; /* 👈 Set your preferred max height */
+  overflow-y: auto; /* 👈 Enable vertical scrolling */
+
+  background-color: rgb(156, 156, 156);
+  border: 1px solid #494949;
+  border-radius: 0.375rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 50;
+}
+
+.submenu-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.submenu-link:hover {
+  background-color: #f3f4f6;
+}
+
+@media (max-width: 768px) {
+  .back-button,
+  .next-button {
+    padding: 4px 6px;
+    font-size: 0.45rem;
+    top: 0.5rem;
+  }
+  .further-reading-btn {
+    padding: 2px 4px;
+    font-size: 0.45rem;
+    top: 3.5rem;
+    left: 0.1rem;
+  }
+  .inside-alge-home-btn {
+    padding: 4px 6px;
+    font-size: 0.45rem;
+    top: 2rem;
+    right: 1rem;
+  }
+
+  .back-button {
+    left: 1px;
+  }
+
+  .next-button {
+    right: 1rem;
+  }
+
+  .dropdown-menu {
+    width: 55%;
+    left: 4%;
+    top: 4.5rem;
+    position: absolute;
+  }
+
+  .submenu {
+    position: relative;
+    left: 0;
+    top: auto;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    width: 78%;
+  }
+  .main-content-full {
+    display: inline-flex;
+  }
+}
+
+/* =========================================================================== */
+/* all 8 topics  */
+@media (max-width: 768px) {
+  .back-btn-8 {
+    /* position: static !important; */
+    margin-top: 8px;
+    margin-left: -33px;
+  }
+
+  /* Search adjustments */
+  .search-container-8 {
+    width: 50%;
+    display: block;
+    justify-content: right;
+    margin-bottom: -144px;
+  }
+
+  .search-container-8 input {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  input[type="text"] {
+    position: static !important;
+    width: 30px;
+    /* margin-top: -1px; */
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .search-btn-8-all {
+    position: static !important;
+    margin-top: 8px;
+    margin-right: -25px;
+    color: white;
+  }
+}
+
+/* ============================================================================ */
+
+@media (max-width: 768px) {
+  .alge-back-btn {
+    /* position: static !important; */
+    margin-top: 0px;
+    margin-left: -110px;
+  }
+  .alge_home {
+    margin-top: 0px;
+    margin-right: -150px;
+  }
+  .alge-next-btn {
+    /* position: static !important; */
+    margin-top: 0px;
+    margin-right: -110px;
+  }
+}
+
+/* ========================================================================= */
+
+@media (max-width: 768px) {
+  /* Search adjustments */
+  .search-container-all-content {
+    width: 50%;
+    display: block;
+    justify-content: right;
+    margin-bottom: -144px;
+  }
+
+  .search-container-all-content input {
+    width: 50%;
+    max-width: 300px;
+  }
+
+  input[type="text"] {
+    position: static !important;
+    width: 30px;
+    margin-top: 22px;
+    margin-right: -123px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .search-btn-all-content {
+    position: static !important;
+    margin-top: 11px;
+    margin-right: -133px;
+    font-size: 12px;
+    /* width: 10px; */
+  }
+}
