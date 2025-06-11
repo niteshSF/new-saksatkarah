@@ -609,13 +609,13 @@ By P. V. Kane
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="The Foundation of Dharma">The Foundation of Dharma</h3>
                 <p>
                   At the heart of ancient Bhāratīya jurisprudence is Dharma,
@@ -638,7 +638,7 @@ By P. V. Kane
                   ancient Bhāratīya legal thought.
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc1}
@@ -684,13 +684,13 @@ By P. V. Kane
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc2}
                   alt="Descriptive Alt Text"
@@ -701,7 +701,7 @@ By P. V. Kane
                 <br />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="The Structure of the Dharmaśāstras">
                   The Structure of the Dharmaśāstras
                 </h3>

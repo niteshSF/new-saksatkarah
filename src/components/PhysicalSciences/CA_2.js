@@ -665,13 +665,13 @@ const CA_2 = () => {
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="The Roots of Cosmology in Vedic Literature">
                   The Roots of Cosmology in Vedic Literature
                 </h3>
@@ -696,7 +696,7 @@ const CA_2 = () => {
                   (Yajurveda, 17.81).
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc1}
@@ -742,13 +742,13 @@ const CA_2 = () => {
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc2}
                   alt="Descriptive Alt Text"
@@ -761,7 +761,7 @@ const CA_2 = () => {
                 
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="Mathematical Precision in Ancient Astronomy">
                   Mathematical Precision in Ancient Astronomy
                 </h3>
@@ -826,13 +826,13 @@ const CA_2 = () => {
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="Cosmological Narratives and Sacred Geometry">
                   Cosmological Narratives and Sacred Geometry
                 </h3>
@@ -858,7 +858,7 @@ const CA_2 = () => {
                   existence.
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc3}
@@ -904,13 +904,13 @@ const CA_2 = () => {
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc4}
                   alt="Descriptive Alt Text"
@@ -921,7 +921,7 @@ const CA_2 = () => {
                 <br />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="Astronomical Instruments and Observatories">
                   Astronomical Instruments and Observatories
                 </h3>

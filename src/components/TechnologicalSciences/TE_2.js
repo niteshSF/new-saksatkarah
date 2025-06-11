@@ -659,13 +659,13 @@ By Thakkar, N. H.
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="The Vedic Foundations: Textile and Spirituality">
                   The Vedic Foundations: Textile and Spirituality
                 </h3>
@@ -693,7 +693,7 @@ By Thakkar, N. H.
                   fertility and prosperity (Taittirīya Brahmana, 3.10.11).
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc1}
@@ -739,13 +739,13 @@ By Thakkar, N. H.
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc2}
                   alt="Descriptive Alt Text"
@@ -755,7 +755,7 @@ By Thakkar, N. H.
                 />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="The Loom of Dharma: Weaving as a Sacred Duty">
                   The Loom of Dharma: Weaving as a Sacred Duty
                 </h3>

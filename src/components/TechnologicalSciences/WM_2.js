@@ -675,13 +675,13 @@ By Robert Burton Buckley
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="The Vedic Perspective on Water">
                   The Vedic Perspective on Water
                 </h3>
@@ -712,7 +712,7 @@ By Robert Burton Buckley
                   various rituals and ceremonies.
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc1}
@@ -756,15 +756,15 @@ By Robert Burton Buckley
             <br />
 
             <div
-              style={{
-                display: "flex",
-                alignItems: "flex-start",
-                gap: "3rem",
-                padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
-              }}
+             style={{
+              display: "flex",
+              gap: "3rem",
+              padding: "0.5rem",
+              flexWrap: "nowrap", // Ensures single row
+              alignItems: "stretch", // Makes both items align to tallest
+            }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc2}
                   alt="Descriptive Alt Text"
@@ -774,7 +774,7 @@ By Robert Burton Buckley
                 />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="Tank Irrigation Systems: Sustainability at Its Best">
                   Tank Irrigation Systems: Sustainability at Its Best
                 </h3>

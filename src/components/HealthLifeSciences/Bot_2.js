@@ -642,13 +642,13 @@ By W H Gregg
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <br/>
                 <h3 id="Botany in Ancient Bhāratīya Texts">
                   Botany in Ancient Bhāratīya Texts
@@ -672,7 +672,7 @@ By W H Gregg
                   readers.
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc1}
@@ -716,15 +716,15 @@ By W H Gregg
             <br />
 
             <div
-              style={{
-                display: "flex",
-                alignItems: "flex-start",
-                gap: "3rem",
-                padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
-              }}
+             style={{
+              display: "flex",
+              gap: "3rem",
+              padding: "0.5rem",
+              flexWrap: "nowrap", // Ensures single row
+              alignItems: "stretch", // Makes both items align to tallest
+            }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc2}
                   alt="Descriptive Alt Text"
@@ -735,7 +735,7 @@ By W H Gregg
                 <br />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <br/>
                 <h3 id="Vṛkṣāyurveda: The Ancient Science of Plant Life">
                   Vṛkṣāyurveda: The Ancient Science of Plant Life

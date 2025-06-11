@@ -662,13 +662,13 @@ By Gupta, Kaviraj Dhurmo Dass Sen
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <br/>
                 <h3 id="The Spiritual Essence of Food">
                   The Spiritual Essence of Food
@@ -693,7 +693,7 @@ By Gupta, Kaviraj Dhurmo Dass Sen
                   overall well-being.
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc1}
@@ -739,13 +739,13 @@ By Gupta, Kaviraj Dhurmo Dass Sen
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc2}
                   alt="Descriptive Alt Text"
@@ -756,7 +756,7 @@ By Gupta, Kaviraj Dhurmo Dass Sen
                 <br />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <br/>
                 <h3 id="Dietary Guidelines for Health and Wisdom">
                   Dietary Guidelines for Health and Wisdom

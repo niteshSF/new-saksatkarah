@@ -11,7 +11,7 @@ import { FaBars, FaSearch } from "react-icons/fa";
 import Search_For_All_Content from "../Search_For_All_Content";
 
 const Trigonometry_2 = () => {
-  const [isCollapsed, setIsCollapsed] = useState(true);
+  const [isCollapsed, setIsCollapsed] = useState(false);
   const navigate = useNavigate();
 
   // ==================== footer shows, left section goes slightly up ===================================
@@ -635,13 +635,13 @@ By Wilkinson, Lancelot
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="The Vedic Origins of Trigonometry">
                   The Vedic Origins of Trigonometry{" "}
                 </h3>
@@ -673,7 +673,7 @@ By Wilkinson, Lancelot
                   trigonometry in Bhārata.
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc1}
@@ -719,13 +719,13 @@ By Wilkinson, Lancelot
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc2}
                   alt="Descriptive Alt Text"
@@ -735,7 +735,7 @@ By Wilkinson, Lancelot
                 />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="Āryabhaṭa and the Advancement of Trigonometry">
                   Āryabhaṭa and the Advancement of Trigonometry{" "}
                 </h3>

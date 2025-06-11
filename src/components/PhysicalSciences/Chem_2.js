@@ -16,35 +16,32 @@ const Chem_2 = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const navigate = useNavigate();
 
-  
-
   // ==================== footer shows, left section goes slightly up ===================================
-    
-    const footerRef = useRef();
-    const [isFooterVisible, setIsFooterVisible] = useState(false);
-  
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          setIsFooterVisible(entry.isIntersecting);
-        },
-        {
-          root: null,
-          threshold: 0.1,
-        }
-      );
-  
-      if (footerRef.current) {
-        observer.observe(footerRef.current);
-      }
-  
-      return () => {
-        if (footerRef.current) {
-          observer.unobserve(footerRef.current);
-        }
-      };
-    }, []);
 
+  const footerRef = useRef();
+  const [isFooterVisible, setIsFooterVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsFooterVisible(entry.isIntersecting);
+      },
+      {
+        root: null,
+        threshold: 0.1,
+      }
+    );
+
+    if (footerRef.current) {
+      observer.observe(footerRef.current);
+    }
+
+    return () => {
+      if (footerRef.current) {
+        observer.unobserve(footerRef.current);
+      }
+    };
+  }, []);
 
   // ------------------------ heighlight when we click from searh bar ------------------------------------------------------------------
 
@@ -247,7 +244,7 @@ const Chem_2 = () => {
       <div className="head-section">
         <h1>रसशास्त्रम् - Chemistry</h1>
 
-<Search_For_All_Content />
+        <Search_For_All_Content />
 
         <button
           className="back-button"
@@ -289,10 +286,8 @@ const Chem_2 = () => {
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                          Rasa-jala-nidhi Or Ocean Of Indian Chemistry Vol 1
-By Mookerjee, Bhudeb
-
-
+                          Rasa-jala-nidhi Or Ocean Of Indian Chemistry Vol 1 By
+                          Mookerjee, Bhudeb
                         </a>
                       </li>
                       <li>
@@ -302,10 +297,8 @@ By Mookerjee, Bhudeb
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                          Rasa-jala-nidhi Or Ocean Of Indian Chemistry Vol 2
-By Mookerjee, Bhudeb
-
-
+                          Rasa-jala-nidhi Or Ocean Of Indian Chemistry Vol 2 By
+                          Mookerjee, Bhudeb
                         </a>
                       </li>
                       <li>
@@ -315,10 +308,8 @@ By Mookerjee, Bhudeb
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                         Rasa-jala-nidhi Or Ocean Of Indian Chemistry Vol 3
-By Mookerjee, Bhudeb
-
-
+                          Rasa-jala-nidhi Or Ocean Of Indian Chemistry Vol 3 By
+                          Mookerjee, Bhudeb
                         </a>
                       </li>
                       <li>
@@ -328,10 +319,8 @@ By Mookerjee, Bhudeb
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                          Rasa-jala-nidhi Or Ocean Of Indian Chemistry Vol 4
-By Mookerjee, Bhudeb
-
-
+                          Rasa-jala-nidhi Or Ocean Of Indian Chemistry Vol 4 By
+                          Mookerjee, Bhudeb
                         </a>
                       </li>
 
@@ -342,10 +331,8 @@ By Mookerjee, Bhudeb
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                          Rasa-jala-nidhi Or Ocean Of Indian Chemistry Vol 5
-By Mookerjee, Bhudeb
-
-
+                          Rasa-jala-nidhi Or Ocean Of Indian Chemistry Vol 5 By
+                          Mookerjee, Bhudeb
                         </a>
                       </li>
 
@@ -366,10 +353,10 @@ By Mookerjee, Bhudeb
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                          Rasa Ratna Samucchaya Of Vagbhatacharya Shankar Lal Hari Shankar
+                          Rasa Ratna Samucchaya Of Vagbhatacharya Shankar Lal
+                          Hari Shankar
                         </a>
                       </li>
-
                     </ul>
                   )}
                 </li>
@@ -392,7 +379,7 @@ By Mookerjee, Bhudeb
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                         Minerals and Metals Heritage of India
+                          Minerals and Metals Heritage of India
                         </a>
                       </li>
                       <li>
@@ -413,13 +400,10 @@ By Mookerjee, Bhudeb
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                          Ocean Of Indian Chemistry And Alchemy
-By Mookerji, Bhudeb, Comp.
-
-
+                          Ocean Of Indian Chemistry And Alchemy By Mookerji,
+                          Bhudeb, Comp.
                         </a>
                       </li>
-
                     </ul>
                   )}
                 </li>
@@ -444,9 +428,11 @@ By Mookerji, Bhudeb, Comp.
       <main>
         <div className={`main-content-full ${isCollapsed ? "collapsed" : ""}`}>
           {!isCollapsed && (
-            <section className={`alge-left-section ${
-              isFooterVisible ? "adjusted-up" : ""
-            }`}>
+            <section
+              className={`alge-left-section ${
+                isFooterVisible ? "adjusted-up" : ""
+              }`}
+            >
               <button
                 onClick={() => setIsCollapsed(true)}
                 className="toggle-button"
@@ -689,14 +675,14 @@ By Mookerji, Bhudeb, Comp.
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
-                <br/>
+             <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
+                <br />
                 <h3 id="Alchemy and Medicinal Chemistry">
                   Alchemy and Medicinal Chemistry
                 </h3>
@@ -719,7 +705,7 @@ By Mookerji, Bhudeb, Comp.
                   (vitality), and cured various ailments.
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc1}
@@ -765,13 +751,13 @@ By Mookerji, Bhudeb, Comp.
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc2}
                   alt="Descriptive Alt Text"
@@ -782,7 +768,7 @@ By Mookerji, Bhudeb, Comp.
                 <br />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="Metallurgy">Metallurgy</h3>
                 {/* <div style={{ textAlign: "right", marginLeft: "30rem" }}> */}
                 <p>
@@ -847,15 +833,15 @@ By Mookerji, Bhudeb, Comp.
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
-                <br/>
-                <br/>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
+                <br />
+                <br />
                 <p>
                   <strong> Yantras : </strong> Instruments like Koṣṭhī
                   (furnaces), Bhastrikā (bellows), and Mūṣā (crucibles) played a
@@ -889,7 +875,7 @@ By Mookerji, Bhudeb, Comp.
                   enhancement of therapeutic properties.
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc3}
@@ -935,13 +921,13 @@ By Mookerji, Bhudeb, Comp.
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc4}
                   alt="Descriptive Alt Text"
@@ -952,7 +938,7 @@ By Mookerji, Bhudeb, Comp.
                 <br />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="Key Processes in Bhasma Preparation">
                   Key Processes in Bhasma Preparation
                 </h3>
@@ -1028,7 +1014,6 @@ By Mookerji, Bhudeb, Comp.
             <br />
           </section>
         </div>
-
       </main>
 
       <footer ref={footerRef} className="footer1">

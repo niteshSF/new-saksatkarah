@@ -15,7 +15,7 @@ const Phy_2 = () => {
   const navigate = useNavigate();
 
   // ==================== footer shows, left section goes slightly up ===================================
-  
+
   const footerRef = useRef();
   const [isFooterVisible, setIsFooterVisible] = useState(false);
 
@@ -209,7 +209,8 @@ const Phy_2 = () => {
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                          The Vaisesika sutras of Kanada. Translated by Nandalal Sinha
+                          The Vaisesika sutras of Kanada. Translated by Nandalal
+                          Sinha
                         </a>
                       </li>
                       <li>
@@ -219,12 +220,10 @@ const Phy_2 = () => {
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                        The Vaisesika Philosophy 1917 by London Royal Asiatic Society
+                          The Vaisesika Philosophy 1917 by London Royal Asiatic
+                          Society
                         </a>
                       </li>
-
-                     
-                     
                     </ul>
                   )}
                 </li>
@@ -247,8 +246,7 @@ const Phy_2 = () => {
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                          The Nyaya Theory Of Knowledge
-                          By S C Chatterjee
+                          The Nyaya Theory Of Knowledge By S C Chatterjee
                         </a>
                       </li>
                       <li>
@@ -269,11 +267,9 @@ const Phy_2 = () => {
                           rel="noopener noreferrer"
                           className="submenu-link"
                         >
-                          The Philosophy Of Nyaya Vaisesika 
-                          By Shastri,nath
+                          The Philosophy Of Nyaya Vaisesika By Shastri,nath
                         </a>
                       </li>
-
                     </ul>
                   )}
                 </li>
@@ -301,9 +297,11 @@ const Phy_2 = () => {
       <main>
         <div className={`main-content-full ${isCollapsed ? "collapsed" : ""}`}>
           {!isCollapsed && (
-            <section className={`alge-left-section ${
-              isFooterVisible ? "adjusted-up" : ""
-            }`}>
+            <section
+              className={`alge-left-section ${
+                isFooterVisible ? "adjusted-up" : ""
+              }`}
+            >
               <button
                 onClick={() => setIsCollapsed(true)}
                 className="toggle-button"
@@ -632,13 +630,13 @@ const Phy_2 = () => {
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="Atomic Theory: The Concept of Paramāṇu">
                   Atomic Theory: The Concept of Paramāṇu
                 </h3>
@@ -671,7 +669,9 @@ const Phy_2 = () => {
                   understanding.
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div
+                style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}
+              >
                 <br />
                 <img
                   src={imageSrc1}
@@ -717,13 +717,15 @@ const Phy_2 = () => {
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div
+                style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}
+              >
                 <img
                   src={imageSrc2}
                   alt="Descriptive Alt Text"
@@ -734,7 +736,7 @@ const Phy_2 = () => {
                 <br />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="Sāpekṣavāda: Early Ideas of Relativity and Interconnectedness">
                   Sāpekṣavāda: Early Ideas of Relativity and Interconnectedness
                 </h3>

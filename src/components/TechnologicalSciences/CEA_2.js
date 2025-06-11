@@ -727,13 +727,13 @@ By Acharya, Prasanna Kumar
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap",
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="The Science of Vāstu Śāstra">
                   The Science of Vāstu Śāstra
                 </h3>
@@ -766,7 +766,7 @@ By Acharya, Prasanna Kumar
                 </p>
 
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc1}
@@ -812,13 +812,13 @@ By Acharya, Prasanna Kumar
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc2}
                   alt="Descriptive Alt Text"
@@ -828,7 +828,7 @@ By Acharya, Prasanna Kumar
                 />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="Temple Architecture: A Journey into the Divine">
                   Temple Architecture: A Journey into the Divine
                 </h3>
@@ -889,15 +889,15 @@ By Acharya, Prasanna Kumar
             )}
 
             <div
-              style={{
-                display: "flex",
-                alignItems: "flex-start",
-                gap: "3rem",
-                padding: "0.5rem",
-                flexWrap: "wrap",
-              }}
+             style={{
+              display: "flex",
+              gap: "3rem",
+              padding: "0.5rem",
+              flexWrap: "nowrap", // Ensures single row
+              alignItems: "stretch", // Makes both items align to tallest
+            }}
             >
-              <div style={{ flex: "1", minWidth: "300px" }}>
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
                 <h3 id="The Indus Valley Civilization: Urban Planning and Hydraulic Engineering">
                   The Indus Valley Civilization: Urban Planning and Hydraulic
                   Engineering
@@ -923,7 +923,7 @@ By Acharya, Prasanna Kumar
                   Valley (Śāstrī, 1923).
                 </p>
               </div>
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "left" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "left" }}>
                 <br />
                 <img
                   src={imageSrc3}
@@ -969,13 +969,13 @@ By Acharya, Prasanna Kumar
             <div
               style={{
                 display: "flex",
-                alignItems: "flex-start",
                 gap: "3rem",
                 padding: "0.5rem",
-                flexWrap: "wrap", // this makes it responsive
+                flexWrap: "nowrap", // Ensures single row
+                alignItems: "stretch", // Makes both items align to tallest
               }}
             >
-              <div style={{ flex: "1", minWidth: "300px", textAlign: "right" }}>
+              <div style={{ flex: "0.5", minWidth: "300px", textAlign: "right" }}>
                 <img
                   src={imageSrc4}
                   alt="Descriptive Alt Text"
@@ -986,8 +986,7 @@ By Acharya, Prasanna Kumar
                 <br />
               </div>
 
-              <div style={{ flex: "1", minWidth: "300px" }}>
-                
+              <div style={{ flex: "1 1 50%", minWidth: "300px" }}>
 
               <h3 id="The Stone Chariot of Hampi">
                 The Stone Chariot of Hampi
